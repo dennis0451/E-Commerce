@@ -1,0 +1,24 @@
+{% include 'amzin_app/head.html'%}
+<header>
+    {% include 'amzin_app/navbar.html'%}
+</header>
+
+<body class="main">
+    <div >
+        <div id="search_bar">
+        <form id="searchForm" class="d-flex" role="search">
+            <input id="product" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button onclick="outOfStock()" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <p>
+            <strong>
+                <marquee behavior="alternate" direction="">Items on this page are out of stock.</marquee>
+            </strong>
+        </p>
+        </div>
+    </div>
+    <div id="out">
+    </div>
+    
+</body>
+{% include 'amzin_app/footer.html'%}

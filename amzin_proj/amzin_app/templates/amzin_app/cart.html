@@ -1,0 +1,51 @@
+
+{% include 'amzin_app/head.html'%}
+<header>
+    {% include 'amzin_app/navbar.html'%}
+</header>
+
+<body>
+    {{ test4 }}
+
+
+<div class="container">
+     <div class="row">
+        <div class="col-md-12">
+            <h2 style="margin-bottom: 30px; margin-top: 5%;">
+                My Shopping Cart
+            </h2>
+        </div>
+        <div class="col-md-12">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <td>Image</td>
+                        <td>Name</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="80"><img height="60"
+                                src="https://thumbnails.production.thenounproject.com/buANKrSIR9gDujG3vPBniX3vgrc=/fit-in/1000x1000/photos.production.thenounproject.com/photos/ABAB5FC4-A60E-47DD-BAC6-CA5E05F14DA8.jpg"
+                                td>
+                        <td style="vertical-align: middle">DVD Web Design interpolate</td>
+                        <td style="vertical-align: middle">$20.00</td>
+                        <td width="80" style="vertical-align: middle">13</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="col-md-12">
+            <div class="checkout-shopping">
+                <a href="{% url 'home'%}" class="btn">Continue Shopping</a>
+                <a href="{% url 'checkout'%}" class="btn btn-success">One-Click Checkout</a>
+            </div>
+        </div>
+     </div>
+</div>
+</body>
+{% include 'amzin_app/footer.html'%}
+
