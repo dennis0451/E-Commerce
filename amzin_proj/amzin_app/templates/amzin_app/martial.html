@@ -59,31 +59,35 @@
                     <td>Name</td>
                     <td>Price</td>
                     <td>Quantity</td>
+                    <td>In Stock</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td width="80"><img height="60"
-                            src="https://thumbnails.production.thenounproject.com/buANKrSIR9gDujG3vPBniX3vgrc=/fit-in/1000x1000/photos.production.thenounproject.com/photos/ABAB5FC4-A60E-47DD-BAC6-CA5E05F14DA8.jpg"
+                            src="https://static.thenounproject.com/png/2031145-200.png"
                             td>
                     <td style="vertical-align: middle">Mail order Martial Arts Coach</td>
-                    <td style="vertical-align: middle">$1000.00</td>
-                    <td width="80" style="vertical-align: middle">13</td>
+                    <td style="vertical-align: middle">${{ inventory.items.instructor }}</td>
+                    <td width="80" style="vertical-align: middle">{{ inventory.stock.instructor }}</td>
+                    <td> <button type="button" class="btn btn-danger btn-lg btn-radius">AddToCart</button> </td>
                 </tr>
                 <td width="80"><img height="60"
-                        src="https://thumbnails.production.thenounproject.com/buANKrSIR9gDujG3vPBniX3vgrc=/fit-in/1000x1000/photos.production.thenounproject.com/photos/ABAB5FC4-A60E-47DD-BAC6-CA5E05F14DA8.jpg"
+                        src="https://static.thenounproject.com/png/905884-200.png"
                         td>
                 <td style="vertical-align: middle">Mail order Martial Arts coach and gym equipment</td>
-                <td style="vertical-align: middle">$5000.00</td>
-                <td width="80" style="vertical-align: middle">13</td>
+                <td style="vertical-align: middle">${{ inventory.items.instructor_ring }}</td>
+                <td width="80" style="vertical-align: middle">{{ inventory.stock.instructor_ring }}</td>
+                <td> <button type="button" class="btn btn-danger btn-lg btn-radius">AddToCart</button> </td>
                 </tr>
                 <td width="80"><img height="60"
-                        src="https://thumbnails.production.thenounproject.com/buANKrSIR9gDujG3vPBniX3vgrc=/fit-in/1000x1000/photos.production.thenounproject.com/photos/ABAB5FC4-A60E-47DD-BAC6-CA5E05F14DA8.jpg"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2LjU4IDE1My4wNWMtNC42Mjg5IDAtOC4zMjAzIDMuOTY4OC04LjI1IDguNjk5MnYxMS43MTFsLTIwOS41MiA5NS4xNzJ2LTQuMDgyYzAuMDc0MjE5LTQuODM1OS0zLjc4MTItOC43NzczLTguNTExNy04LjY5OTItNC42Mjg5IDAtOC4zMjAzIDMuOTY4OC04LjI1IDguNjk5MnYyNS4yM2MtMC4wMDc4MTIgMC4xODc1LTAuMDA3ODEyIDAuMzc1IDAgMC41NjY0MXYxOTcuMTNjMCAzLjM4NjcgMS45NDkyIDYuNDUzMSA0Ljk3NjYgNy44MzJsMjI1Ljc5IDEwMi41NiAwLjQ5MjE5IDAuMjQyMTljMC4wODU5MzcgMCAwLjE3NTc4IDAuMTcxODggMC4yNjE3MiAwLjE3MTg4IDAuMTcxODggMCAwLjM0NzY2IDAuMTcxODggMC41MjM0NCAwLjIwMzEyIDAuMjY5NTMgMC4xNzE4OCAwLjU0Mjk3IDAuMTcxODggMC44MTY0MSAwLjI0MjE5IDAuMjY5NTMgMCAwLjU0Mjk3IDAuMTcxODggMC44MjAzMSAwLjE3MTg4aDAuMjYxNzJjMC4wOTc2NTcgMC4wMDM5MDYgMC4xOTUzMSAwLjAwMzkwNiAwLjI5Mjk3IDAgMC4xODM1OSAwLjAwMzkwNiAwLjM3MTA5IDAuMDAzOTA2IDAuNTU4NTkgMCAwLjE4MzU5IDAuMDAzOTA2IDAuMzcxMDkgMC4wMDM5MDYgMC41NTQ2OSAwIDAuNTU0NjkgMCAxLjEwMTYtMC4xNzE4OCAxLjYzNjctMC4zMDg1OSAwLjI2NTYyLTAuMTcxODggMC41MjczNC0wLjE4NzUgMC43ODUxNi0wLjMwODU5aDAuMjkyOTdsMjI2LjI4LTEwMi44YzMuMTEzMy0xLjQyMTkgNS4wODItNC42MTcyIDQuOTc2Ni04LjA5NzdsMC4wMDM5MDctNTkuOTY1di00Mi4zMzJjMC4wMDM5MDYtMC4xNzE4OCAwLjAwMzkwNi0wLjMwODU5IDAtMC40NjQ4NHYtMTIwLjAzYzAuMDkzNzUtNC44NDc3LTMuNzY1Ni04LjgwODYtOC41MTE3LTguNzM0NC00LjYyODkgMC04LjMyMDMgMy45Njg4LTguMjUgOC42OTkydjQuMDgybC0yMDkuNTItOTUuMTY4di0xMS43MTFjMC4wNzQyMTgtNC44MzU5LTMuNzgxMi04Ljc3MzQtOC41MTE3LTguNjk5MnptLTguMjUgMzkuMTUydjMyLjY2bC0xNjAuNDggNzIuODgzLTM1Ljk3Ny0xNi4zMjh6bTE2Ljc2MiAwIDE5Ni40NSA4OS4yMTEtMzUuOTc3IDE2LjMyOC0xNjAuNDgtNzIuODc5em0tMTYuNzYyIDUxLjM5OHYzMi42NmwtMTAzLjkxIDQ3LjE4NC0zNS45NDUtMTYuMzI4em0xNi43NjIgMCAxMzkuODUgNjMuNTEyLTM1Ljk0NSAxNi4zMzItMTAzLjkxLTQ3LjE4NHptLTguMzgyOCA0Ny41ODYgOTEuNjk1IDQxLjYyOS04My4zMTIgMzcuODQ0di0zLjIxMDljMC4wNTQ2ODctNC44MjQyLTMuNzkzLTguNzQyMi04LjUxMTctOC42NjgtNC42MTcyIDAtOC4zMDQ3IDMuOTQ5Mi04LjI1IDguNjY4djMuMjEwOWwtODMuMzE2LTM3Ljg0OHptLTIxNy44OSAzLjA3ODEgMjguNDE0IDEyLjg1Mi0yOC40MTQgMTIuOTE4em00MzUuNzkgMHYyNS43NjZsLTI4LjQxNC0xMi45MTh6bS0zODYuNzkgMjIuMjE5IDM1Ljk0NSAxNi4zMjgtMzUuOTE0IDE2LjMyOC0zNS45NzctMTYuMzI4em0zMzcuNzggMCAzNS45NDUgMTYuMzI4LTM1Ljk3NyAxNi4zMjgtMzUuOTE0LTE2LjMyOHptLTI4MS4yMSAyNS42OTkgMTAzLjk0IDQ3LjI1djMyLjYyNWwtMTM5Ljg4LTYzLjU0M3ptMjI0LjY0IDAgMzUuOTQ1IDE2LjMyOC0xMzkuODkgNjMuNTUxdi0zMi42MjV6bS0zMzAuMjIgMy40ODA1IDI4LjM4MyAxMi44ODMtMjguMzgzIDEyLjg4M3ptNDM1Ljc5IDB2MjUuNzY2bC0yOC4zODMtMTIuODgzem0tMzg2Ljc5IDIyLjIxOSAxNjAuNTEgNzIuOTQ5djI4LjY4Yy0wLjAwNzgxMyAwLjIwMzEzLTAuMDA3ODEzIDAuNDI5NjkgMCAwLjYzMjgxdjQuMDUwOGwtMTk3LjI3LTg5LjYxM3ptMzM3Ljc4IDAgMzYuNzYyIDE2LjY5OS0xOTcuMjcgODkuNjEzdi0zMy4zNjN6Ii8+Cjwvc3ZnPgo="
                         td>
                 <td style="vertical-align: middle">Mail order Martial Arts coach, gym equipment, and construction
                     crew to build your own personal gym</td>
-                <td style="vertical-align: middle">$30000.00</td>
-                <td width="80" style="vertical-align: middle">13</td>
+                <td style="vertical-align: middle">${{ inventory.items.construction_ring }}</td>
+                <td width="80" style="vertical-align: middle">{{ inventory.stock.construction_ring }}</td>
+                <td> <button type="button" class="btn btn-danger btn-lg btn-radius">AddToCart</button> </td>
                 </tr>
             </tbody>
         </table>

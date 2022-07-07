@@ -12,7 +12,26 @@ load_dotenv()
 
 cart_total = 0
 
-inventory_list = []
+inventory_list = {
+    'items':{
+    'instructor': 1000,
+    'instructor_pool':5000,
+    'instructor_ring':5000,
+    'instructor_gym':5000,
+    'construction_pool':30000,
+    'construction_ring':30000,
+    'construction_gym':30000
+    },
+    'stock':{
+    'instructor': 10,
+    'instructor_pool':10,
+    'instructor_ring':10,
+    'instructor_gym':10,
+    'construction_pool':10,
+    'construction_ring':10,
+    'construction_gym':10
+    }
+}
 
 pp = pprint.PrettyPrinter(indent=2, depth=2)
 print(os.environ)
@@ -33,30 +52,30 @@ def index(request):
 
 
 def fitness(request):
-    test = 'fitness'
+    inventory = inventory_list
     
-    return render(request, "amzin_app/fitness.html",{'test':test})
+    return render(request, "amzin_app/fitness.html",{'inventory' :inventory})
 
 
 def martial(request):
-    test2 = 'martial arts'
+    inventory = inventory_list
 
-    return render(request, "amzin_app/martial.html", {'test2' : test2})
+    return render(request, "amzin_app/martial.html",{'inventory' :inventory})
 
 def aquatics(request):
-    test3= 'aquatics'
+    inventory = inventory_list
 
-    return render(request, "amzin_app/aquatics.html", {'test3' : test3})
+    return render(request, "amzin_app/aquatics.html", {'inventory' :inventory})
 
 def cart(request):
-    test4= 'give me your money now'
+    inventory = inventory_list
 
-    return render(request, "amzin_app/cart.html", {'test4' : test4})
+    return render(request, "amzin_app/cart.html",{'inventory' :inventory})
 
 def checkout(request):
-    test6= 'give me your money now'
+    inventory = inventory_list
 
-    return render(request, "amzin_app/checkout.html", {'test6' : test6})
+    return render(request, "amzin_app/checkout.html", {'inventory' :inventory})
 
 
 def search(request):
